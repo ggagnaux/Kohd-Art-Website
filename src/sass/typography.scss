@@ -1,0 +1,57 @@
+/*--------------------------------------------------------------------------
+	Typography Styles
+--------------------------------------------------------------------------*/
+
+@import "base/_constants";
+@import "base/_variables";
+
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: 20px;
+  color: $base-text-color;
+  background-color: $base-background-color;
+}
+
+h1 {
+  color: $heading1-color;
+  font-family: inherit;
+  font-weight: 800;
+}
+h2 {
+  color: #ddd;
+  font-family: inherit;
+  font-size: 2em;
+  line-height: 1.5em;
+  margin: 30px 0 0 0;
+}
+h3 {
+  font-family: inherit;
+  /*color: #eee;*/
+  color: $heading3-color;
+  font-size: 1.5em;
+}
+h4 {
+  font-family: inherit;
+  color: $heading4-color;
+  margin-bottom: 10px;
+}
+
+h4.modal-dialog-title  {
+  color: $heading4-color-alternate !important;
+  font-weight: bolder; 
+}
+
+a {
+  cursor: pointer;
+  /*transition: padding-left 250ms ease-out;*/
+  color: $base-a-color;
+  outline: 0;
+}
+a:hover {
+  /*padding-left: 20px;*/
+  color: $base-a-hover-color;
+  text-decoration:none;
+  outline: 0;
+}

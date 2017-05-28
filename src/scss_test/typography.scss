@@ -1,0 +1,53 @@
+/*--------------------------------------------------------------------------
+	Typography Styles
+--------------------------------------------------------------------------*/
+
+@import "base/_constants";
+
+$base-font-family: $font_lato, $font_arial, $font_helvetica, $font_sans_serif;
+$base-font-size: 16px;
+$base-text-color: $middlegrey;
+$base-background-color: $darkgrey;
+$base-a-color: $richyellow;
+$base-a-hover-color: $dimyellow;
+
+
+body {
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: 20px;
+  color: $base-text-color;
+  background-color: $base-background-color;
+}
+
+h1 {
+  color: #ccc;
+  font-family: inherit;
+  font-weight: 800;
+}
+h2 {
+  color: #ddd;
+  font-family: inherit;
+  font-size: 2em;
+  line-height: 1.5em;
+  margin: 30px 0 0 0;
+}
+h3 {
+  font-family: inherit;
+  color: #eee;
+  font-size: 1.5em;
+}
+h4 {
+  font-family: inherit;
+  color: #ccc;
+  margin-bottom: 10px;
+}
+a {
+  color: $base-a-color;
+  outline: 0;
+}
+a:hover {
+  color: $base-a-hover-color;
+  text-decoration:none;
+  outline: 0;
+}

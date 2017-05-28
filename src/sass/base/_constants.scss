@@ -1,0 +1,49 @@
+/* 
+	Color Definitions 
+*/
+
+$red: 			#ff0000;
+$red1:			#220000;
+$green: 		#00ff00;
+$green1: 		#002200;
+$blue: 			#0000ff;
+$blue1:			#001d36;
+$yellow1:		#555500;
+$purple1:		#330033;
+$grey1:			#222222;
+$black: 		#000000;
+$white: 		#ffffff;
+$offwhite:		#eeeeee;
+$darkgrey:		#333333;
+$middlegrey:	#888888;
+$lightgrey:		#bbbbbb;
+$richyellow:	#999900;
+$dimyellow:		#bbbb00;
+
+$transparentRed60Percent: 		rgba(255, 0, 0, .6);
+$transparentDarkGrey95Percent: 	rgba(10, 10, 10, .95);
+$transparentWhite30Percent: 	rgba(255, 255, 255, .30);
+$transparentWhite95Percent:		rgba(255, 255, 255, .95);
+$transparentBlack20Percent: 	rgba(0, 0, 0, .20);
+$transparentBlack30Percent: 	rgba(0, 0, 0, .30);
+$transparentBlack50Percent: 	rgba(0, 0, 0, .50);
+$transparentBlack80Percent: 	rgba(0, 0, 0, .80);
+$transparentBlack90Percent: 	rgba(0, 0, 0, .90);
+
+
+/* 
+	Font Definitions
+*/
+
+$font_lato:			Lato;
+$font_arial:		Arial;
+$font_helvetica:	'Helvetica';
+$font_sans_serif:	sans-serif;
+$font_family:		Lato, Arial, 'Helvetica', sans-serif;
+
+
+// Viewport width at which navbar will collapse 
+$navbar-collapse-width: 1000px;
+
+
+

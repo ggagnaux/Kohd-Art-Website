@@ -1,0 +1,62 @@
+/*--------------------------------------------------------------------------
+	Typography Styles
+--------------------------------------------------------------------------*/
+/* 
+	Color Definitions 
+*/
+/* 
+	Font Definitions
+*/
+/*
+--
+-- Available Themes
+--
+$theme: dark;
+$theme: light;
+*/
+/*$navbar-background-color: $transparentWhite95Percent;*/
+body {
+  font-family: Lato, Arial, "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+  background-color: #eeeeee; }
+
+h1 {
+  color: #333333;
+  font-family: inherit;
+  font-weight: 800; }
+
+h2 {
+  color: #ddd;
+  font-family: inherit;
+  font-size: 2em;
+  line-height: 1.5em;
+  margin: 30px 0 0 0; }
+
+h3 {
+  font-family: inherit;
+  /*color: #eee;*/
+  color: #333333;
+  font-size: 1.5em; }
+
+h4 {
+  font-family: inherit;
+  color: #333333;
+  margin-bottom: 10px; }
+
+h4.modal-dialog-title {
+  color: #bbbbbb !important;
+  font-weight: bolder; }
+
+a {
+  cursor: pointer;
+  /*transition: padding-left 250ms ease-out;*/
+  color: #999900;
+  outline: 0; }
+
+a:hover {
+  /*padding-left: 20px;*/
+  color: #bbbb00;
+  text-decoration: none;
+  outline: 0; }

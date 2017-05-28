@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+		<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+		<title>jQuery Teletype Plugin Test</title>
+		<style type="text/css">
+			html, body { min-width: 800px; padding: 0; margin: 0; font-family: 'Montserrat', helvetica, sans-serif; background: #222; color: #fff; font-size: 20pt; line-height: 1.5; padding: 2%; }
+			h1 { margin: 0; padding: 0; }
+			.teletype-prefix, .teletype-cursor { color: #dddd00; }
+			.type-text { margin-top: 40px; }
+			.lastWord { color: #ff0000; }
+			#wrapper { padding: 10px; }
+		</style>
+    </head>
+    <body>
+        <div id="wrapper">
+			<h1>jquery.teletype.js demo</h1>
+			<div class="type-text"></div>
+        </div>
+        <script src="../js/libs/jquery.min.js"></script>
+		<script>!function(e){e.fn.teletype=function(t){var n=e.extend({},e.fn.teletype.defaults,t),i=this,o=e(this),s=null,l={string:"",index:0,position:0,loop:0},a=function(){return l.index++,l.index>=n.text.length&&(l.index=0,l.loop++,n.loop!==!1&&n.loop==l.loop)?!1:(l.position=0,c(),"function"==typeof n.callbackNext&&n.callbackNext(l,i),!0)},r=function(){n.prefix&&0===l.position&&0===l.loop&&0===l.index&&e("<span />").addClass("teletype-prefix").html(n.prefix).prependTo(o);var t=l.string.split(""),c=t[l.position],d=l.position+1;if("^"==c||"~"==c){var f=l.string.substr(d).search(/[^0-9]/);-1==f&&(f=l.string.length);var y=l.string.substr(d,f);if(e.isNumeric(y)){if(l.string=l.string.replace(c+y,""),"^"==c)window.setTimeout(function(){window.setTimeout(r,u(n.typeDelay))},y);else{var h=l.position-y;l.string=l.string.substr(0,h-1)+l.string.substr(l.position-1),window.setTimeout(function(){p(Math.max(h,0))},u(n.backDelay))}return}}else if("\\"==c){var m=l.string.substr(d,1);"n"==m&&(l.position++,c="<br />")}void 0!==c&&s.html(s.html()+c),l.position++,l.position<l.string.length?window.setTimeout(r,u(n.typeDelay)):n.preserve===!1?l.index>=n.text.length-1&&n.stopOnFinalWord===!0?(s.addClass(n.finalWordClass),e(".teletype-cursor").hide()):window.setTimeout(function(){window.setTimeout(p,u(n.backDelay))},n.delay):(s.html(s.html()+'<span class="teletype-prefix">'+n.prefix+"</span>"),a()?window.setTimeout(function(){window.setTimeout(r,u(n.typeDelay))},n.delay):"function"==typeof n.callbackFinished&&n.callbackFinished(i)),"function"==typeof n.callbackType&&n.callbackType(c,l,i)},p=function(e){if(e||(e=0),l.position>e)s.html(s.html().slice(0,-1)),window.setTimeout(function(){p(e)},u(n.backDelay)),l.position--;else{if(0===e&&a()===!1)return;window.setTimeout(r,u(n.typeDelay))}},u=function(e){var t=parseInt(e);return n.humanise&&(t+=Math.floor(200*Math.random())),t},c=function(){l.string=n.text[l.index].replace(/\n/g,"\\n")};return this.setCursor=function(t){e(".teletype-cursor",o).text(t)},this.each(function(){if(c(),o.addClass("teletype").empty(),s=e("<span />").addClass("teletype-text").appendTo(o),n.cursor){var t=e("<span />").addClass("teletype-cursor").appendTo(o);i.setCursor(n.cursor),setInterval(function(){n.smoothBlink?t.animate({opacity:0}).animate({opacity:1}):t.delay(500).fadeTo(0,0).delay(500).fadeTo(0,1)},n.blinkSpeed)}r()})},e.fn.teletype.defaults={text:["one","two","three"],typeDelay:100,backDelay:50,blinkSpeed:1e3,delay:2e3,cursor:"|",preserve:!1,prefix:"",loop:0,humanise:!0,smoothBlink:!0,callbackNext:null,callbackType:null,callbackFinished:null,stopOnFinalWord:!1,finalWordClass:""}}(jQuery);</script>
+        <script type="text/javascript">
+			$( function() {
+				$( '.type-text' ).teletype( {
+					//text: [ 'Item 1 of 4', 'Item 2 of 4', 'Item 3 of 4', 'Item 4 of 4...', 'TADA!  I\'m not going anywhere!' ],
+					text: [ 'Graphic Design', 'Photography', 'Web Development', 'You!' ],
+					typeDelay: 0,
+					backDelay: 20,
+					preserve: false,
+					loop: 1,
+					prefix: '',
+					
+					stopOnFinalWord: true,
+					finalWordClass: 'lastWord',
+				} );
+			} );
+        </script>
+    </body>
+</html>

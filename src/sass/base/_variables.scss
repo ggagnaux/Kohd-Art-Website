@@ -1,0 +1,126 @@
+/*
+--
+-- Available Themes
+--
+$theme: dark;
+$theme: light;
+*/
+
+$theme: light;
+
+
+$base-a-color: $richyellow;
+$base-a-hover-color: $dimyellow;
+$modal-dialog-background-color: $blue1;
+
+//
+// Define the variables so they're available everywhere
+//
+$base-background-color: null; 
+$base-text-color: null;
+$base-text-color-inverse: null;
+$form-textbox-background-color: null;
+$panel-background-color: null;
+$panel-hover-background-color: transparent;
+$heading1-color: null;
+$heading3-color: null;
+$heading4-color: null;
+$heading4-color-alternate: null;
+$dialogbox-text-color: null;
+$navbar-background-color: null;
+$menuitem-active-hover-background-color: null;
+$menuitem-active-focus-background-color: null;
+$menuitem-active-focus-text-color: null;
+$menuitem-text-color: null;
+$menuitem-hover-text-color: null;
+$menuitem-hover-background-color: null;
+
+@if $theme == dark {
+    $base-background-color: $darkgrey;
+    $base-text-color: $middlegrey;
+    $base-text-color-inverse: $lightgrey;
+    $form-textbox-background-color: #222;
+    $panel-background-color:  transparent;
+    $panel-hover-background-color:  $grey1;
+    $heading1-color: $lightgrey;
+    $heading3-color: $lightgrey;
+    $heading4-color: $lightgrey;
+    $heading4-color-alternate: $lightgrey;
+    $dialogbox-text-color: $lightgrey;
+    $navbar-background-color: $transparentDarkGrey95Percent;
+    $menuitem-active-hover-background-color: #444;
+    $menuitem-active-focus-background-color: #333;
+    $menuitem-active-focus-text-color: #990;  
+    $menuitem-text-color: #999;  
+    $menuitem-hover-text-color: #999;
+    $menuitem-hover-background-color: #333;  
+    
+
+} @else if $theme == light {
+    $base-background-color: $offwhite;
+    $base-text-color: $darkgrey;
+    $base-text-color-inverse: $lightgrey;
+    $form-textbox-background-color: #ccc;
+    $panel-background-color:  transparent;
+    $panel-hover-background-color:  $grey1;
+    $heading1-color: $darkgrey;
+    $heading3-color: $darkgrey;
+    $heading4-color: $darkgrey;
+    $heading4-color-alternate: $lightgrey;
+    $dialogbox-text-color: $lightgrey;
+    /*$navbar-background-color: $transparentWhite95Percent;*/
+    $navbar-background-color: $transparentDarkGrey95Percent;
+    $menuitem-active-hover-background-color: #444;
+    $menuitem-active-focus-background-color: #333;
+    $menuitem-active-focus-text-color: #990;  
+    $menuitem-text-color: #bbb;
+    $menuitem-hover-text-color: #999;
+    $menuitem-hover-background-color: #440;  
+}
+
+
+$base-font-family: $font_lato, $font_arial, $font_helvetica, $font_sans_serif;
+$base-font-size: 16px;
+
+
+@mixin border-radius($radius) {
+    -webkit-border-radius:  $radius;
+    -moz-border-radius:     $radius;
+    -ms-border-radius:      $radius;
+    border-radius:          $radius;
+}
+
+
+@mixin transition($spec1) {
+    -webkit-transition: $spec1;
+    -moz-transition: $spec1;
+    -ms-transition: $spec1;
+    -o-transition: $spec1;
+    transition: $spec1;
+}
+
+
+@mixin transition1($spec1) {
+    -webkit-transition: $spec1;
+    -moz-transition: $spec1;
+    -ms-transition: $spec1;
+    -o-transition: $spec1;
+    transition: $spec1;
+}
+
+@mixin transition2($spec1, $spec2) {
+    -webkit-transition: $spec1 $spec2;
+    -moz-transition: $spec1 $spec2;
+    -ms-transition: $spec1 $spec2;
+    -o-transition: $spec1 $spec2;
+    transition: $spec1 $spec2;
+}
+
+@mixin transform($transformSpec) {
+    -webkit-transform: $transformSpec;
+    -moz-transform: $transformSpec;
+    -o-transform: $transformSpec;
+    -ms-transform: $transformSpec;
+    transform: $transformSpec;
+}
+

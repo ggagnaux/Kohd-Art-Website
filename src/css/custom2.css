@@ -1,0 +1,48 @@
+/* your styles go here */
+
+h1 {
+    font-size: 25px;
+}
+
+span.small-text {
+    font-family: Arial, "Cardo", "Times New Roman", Times, serif;
+    font-size: 12px;
+    color: #777;
+}
+
+/*@media (min-width: 350px) {*/
+    .container {
+        background-color: rgb(0,0,0);
+        background-color: rgba(0, 0, 20, .95);
+        padding: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        width: 350px;
+        border: 2px solid #555;
+    }
+/*}*/
+
+.button {
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, .5);
+    color: #ddd;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #000;
+}
+
+.left {
+    float: left;
+    position: relative;
+    width: 50%;
+    background-color: #444;
+}
+
+.right {
+    float: right;
+    position: relative;
+    width: 50%;
+    background-color: #888;
+}
