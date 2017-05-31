@@ -303,4 +303,5 @@ src/*.db
 
 
 thumbs.db
-_config.php
+src/config/_config.php
+dist/config/_config.php

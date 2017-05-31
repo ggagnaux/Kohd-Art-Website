@@ -60,6 +60,7 @@
                         <br>
                         <p>
                             <a href="<?php echo SOCIAL_TWITTER_GGAGNAUX; ?>" class="twitter-follow-button" data-show-count="false" data-show-screen-name="true">Follow @ggagnaux</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <a class="social-media" href="<?php echo SOCIAL_GITHUB_GGAGNAUX; ?>" target="_new" data-toggle="tooltip" title="Github"><i class="fa fa-github fa-2x"></i></a>
                             <a class="social-media" href="<?php echo SOCIAL_FACEBOOK_GGAGNAUX; ?>" target="_new" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook fa-2x"></i></a>
                             <a class="social-media" href="<?php echo SOCIAL_LINKEDIN_GGAGNAUX; ?>" target="_new" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin fa-2x"></i></a>
                             <a class="social-media" href="<?php echo SOCIAL_INSTAGRAM_GGAGNAUX; ?>" target="_new" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram fa-2x"></i></a>

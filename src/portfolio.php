@@ -66,6 +66,22 @@
                         </div>
                     </ul>
                 </div> 
+                <div class="row">
+                    <!--<ul class="grid cs-style-3">-->
+                    <ul class="grid">
+                        <div class="col-md-4 col-sm-6">
+                            <figure>
+                                <img src="img/portfolio/skylinevisualizer.jpg" alt="img01">
+                                <figcaption>
+                                    <h3>Application Development</h3>
+                                    <span>Skyline Problem Visualizer</span>
+                                    <a class="btn btn-md animation" href="portfolio-item.php?id=6">Details</a>
+                                    <a href="#" class="close-caption hidden">x</a>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </ul>
+                </div> 
                 <hr>
                 <div class="row">
                     <div class="col-sm-12">

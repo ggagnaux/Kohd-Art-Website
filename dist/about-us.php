@@ -23,47 +23,12 @@
                         <img class="img-responsive" src="img/KohdAndArt_Logo_Transparent.png" alt="About Us">
                     </div>
                     <div class="col-sm-8">
-                        <!--<h2>Software Development and Creative Services</h2>-->
-                        <!--<h3>We specialize in Microsoft ASP.NET Web Application Development.</h3>-->
                         <p>
                            <span class="emphasis1">Kohd&nbsp;&amp;&nbsp;Art</span> (pronounced 'Code and Art') is the software development and creative services company of Greg Gagnaux, based in Vancouver, BC.
                         </p>
                         <p>
                            We specialize in creating web applications for businesses and individuals.  Kohd & Art was founded to combine the software development and photographic skills of our founder.
                         </p>
-
-                           <!--  
-                           We specialize in creating meaningful brands for small businesses all over the world through visual identity, website design and print design. Knoed was founded on the idea of getting back to basics—working with a handful of talented people and keeping things honest, focused and thoughtful. We're inspired by the passion in our clients and we truly care about seeing them succeed. We think hard and work harder to make experiences better, solutions smarter and brands more beautiful through wide-eyed creativity and meticulous craftsmanship.
-                           -->
-
-<!--
-Branding + Identity
-
-Branding is our specialty. There's nothing more exciting to us than conceiving a brand from a blank slate. Or wiping that slate clean and starting fresh. Whether you're new to this or have gone through it before, you'll find that our branding process is designed to eliminate the guesswork and provide clarity and confidence as your brand evolves.
- 
-
-Web + Mobile
-
-Your website is a direct reflection of your company and how the world sees you. We create beautiful, highly functional websites that make a lasting impression. Our websites are thoughtful, interactive experiences developed through a strategic, collaborative process and detailed implementation. We design sites that are flexible enough to fit your current needs and grow with your future goals in mind.
- 
-
-Print + Packaging
-
-Whether we're designing a brochure, catalog or retail packaging, we get excited thinking about the "what ifs." We see every project as an opportunity to do something new and interesting, and our best work is done when clients share our ambition for the attention to details. It's these details that make heads turn and your brand memorable.
--->
-
-                        </p>
-                            
-                        <!--
-                        <div class="clients-logo-wrapper text-center row">
-                            <div class="col-lg-2 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-1.jpg" alt="Client Name"></a></div>
-                            <div class="col-lg-2 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-2.jpg" alt="Client Name"></a></div>
-                            <div class="col-lg-2 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-3.jpg" alt="Client Name"></a></div>
-                            <div class="col-lg-2 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-4.jpg" alt="Client Name"></a></div>
-                            <div class="col-lg-2 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-5.jpg" alt="Client Name"></a></div>
-                            <div class="col-lg-2 col-md-1 col-sm-3 col-xs-6"><a href="#"><img src="img/logos/logo-6.jpg" alt="Client Name"></a></div>
-                        </div>		
-                        -->				
                     </div>
                 </div>
             </div>
@@ -95,6 +60,7 @@ Whether we're designing a brochure, catalog or retail packaging, we get excited 
                         <br>
                         <p>
                             <a href="<?php echo SOCIAL_TWITTER_GGAGNAUX; ?>" class="twitter-follow-button" data-show-count="false" data-show-screen-name="true">Follow @ggagnaux</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            <a class="social-media" href="<?php echo SOCIAL_GITHUB_GGAGNAUX; ?>" target="_new" data-toggle="tooltip" title="Github"><i class="fa fa-github fa-2x"></i></a>
                             <a class="social-media" href="<?php echo SOCIAL_FACEBOOK_GGAGNAUX; ?>" target="_new" data-toggle="tooltip" title="Facebook"><i class="fa fa-facebook fa-2x"></i></a>
                             <a class="social-media" href="<?php echo SOCIAL_LINKEDIN_GGAGNAUX; ?>" target="_new" data-toggle="tooltip" title="LinkedIn"><i class="fa fa-linkedin fa-2x"></i></a>
                             <a class="social-media" href="<?php echo SOCIAL_INSTAGRAM_GGAGNAUX; ?>" target="_new" data-toggle="tooltip" title="Instagram"><i class="fa fa-instagram fa-2x"></i></a>

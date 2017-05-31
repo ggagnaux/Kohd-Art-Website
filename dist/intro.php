@@ -137,12 +137,12 @@
 				width: 100%;
 				z-index: 5000;
 			}
+
 		</style>
 	</head>
     <body>
         <?php RenderOldBrowserWarning(); ?>
-
-        <section id="intro" style="background-image: url('img/background3.jpg');" class="intro">      
+		    <section id="intro" style="background-image: url('img/background3.jpg');" class="intro">
             <div class="overlay"></div>
             <div class="content">
                 <div class="container clearfix">

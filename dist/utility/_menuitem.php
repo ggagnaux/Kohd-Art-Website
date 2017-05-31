@@ -10,16 +10,18 @@
         private $type;
         private $label;
         private $url;
+        private $linkTarget;
         private $menuitems; // Array of menu items
 
         // Constructor
-        public function __construct($enabled, $visible, $name, $type, $label, $url, $menuitems) {
+        public function __construct($enabled, $visible, $name, $type, $label, $url, $linkTarget, $menuitems) {
             $this->enabled = $enabled;
             $this->visible = $visible;
             $this->name = $name;
             $this->type = $type;
             $this->label = $label;
             $this->url = $url;
+            $this->linkTarget = $linkTarget;
             $this->menuitems = $menuitems;
         }
 
@@ -39,5 +41,6 @@
         public function GetLabel() { return $this->label; }
         public function GetUrl() { return $this->url; }
         public function GetMenuItems() { return $this->menuitems; }
+        public function GetLinkTarget() { return $this->linkTarget; }
     }
 ?>

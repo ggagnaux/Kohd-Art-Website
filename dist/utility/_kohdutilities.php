@@ -173,13 +173,25 @@
                     $label = $g_MenuItems[$x]->GetLabel();
                     $url = $g_MenuItems[$x]->GetUrl();
                     $menuitems = $g_MenuItems[$x]->GetMenuItems();
+                    $linkTarget = $g_MenuItems[$x]->GetLinkTarget();
+
+                    $linkType = "";
+                    $externalLinkIcon = "";
+                    if ($linkTarget == LINKTARGET_LOCAL) { 
+                        $linkType = ""; 
+                    } 
+                    else { 
+                        $linkType = " target='_new' "; 
+                        $externalLinkIcon = "<i title=\"\" class=\"fa fa-external-link\" aria-hidden=\"true\" data-original-title=\"Kohd &amp; Art Blog\" data-toggle=\"tooltip\"></i>";
+                    }
+
 
                     if ($type == MENUITEMTYPE_PAGELINK) {
                         if ($activeItemName == $name) {
                             if ($enabled) {
                                 // Active item, enabled and visible
 ?> 
-                                <li class="active"><a href="<?php echo $url;?>"><?php echo $label; ?></a></li> 
+                                <li class="active"><a <?php echo($linkType); ?> href="<?php echo $url;?>"><?php echo $label; ?></a></li> 
 <?php
                             } else {
                                 // Disabled and visible
@@ -187,13 +199,17 @@
                                     <li><a href=""><?php echo $label; ?></a></li> 
 <?php
                                 }
-                            }
+                            } 
                         }
                         else {
                             if ($enabled) {
-                                // Non-active item, enabled and visible
 ?>                                
-                                <li><a href="<?php echo $url;?>"><?php echo $label; ?></a></li> 
+                                <li>
+                                    <a <?php echo($linkType); ?> href="<?php echo $url; ?>">
+                                        <?php echo $label; ?>&nbsp;
+                                        <?php echo $externalLinkIcon ?>
+                                    </a>
+                                </li>
 <?php
                             } else {
                                 if ($visible) {
