@@ -9,7 +9,7 @@
     define("COMPANYNAME",       "Kohd &amp; Art");
     define("COMPANYNAME_NOHTML","Kohd & Art");
     define("ADDRESS",           "Suite 307 - 1675 West 12th Ave., Vancouver, BC, Canada V6J2E3");
-    define("PHONE",             "(604) 877-7757");
+    define("PHONE",             "By Request Only");
     define("EMAIL",             "hello@kohd.co");
     define("EMAIL_OBFUSCATED",  "&#104;&#101;&#108;&#108;&#111;&#064;&#107;&#111;&#104;&#100;&#046;&#099;&#111;");
     define("URL",               "http://www.kohd.co");
@@ -20,7 +20,7 @@
     define("SEO_PAGEDESCRIPTION", COMPANYNAME_NOHTML." - ".HTMLHEADERTITLE." - Microsoft ASP.NET,MVC,SQL Server,C#,Portrait and Product Photography,Retouching,Graphic Design,Fine Art");
     define("CAROUSELDELAY",     5000);
     define("VGFOTONAME",        "Vincent Gagnaux Photography");
-    define("VGFOTOURL",         "http://www.kohd.co/art");
+    define("VGFOTOURL",         "http://www.vgfoto.com");
 
     // Social Media Links
     define("SOCIAL_TWITTER_GGAGNAUX", "https://twitter.com/ggagnaux");

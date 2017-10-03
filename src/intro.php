@@ -186,7 +186,8 @@
                             <a data-toggle="popover" title="" id="btnSoftwareDevelopment" class="button btn btn-primary" href="http://www.kohd.co/index.php">Software<br />Development</a>
                         </div>
                         <div class="right">
-                            <a data-toggle="popover" title="" id="btnCreativeServices" class="btn btn-primary button" href="http://www.kohd.co/art/index.php">Creative<br />Services</a>
+                            <!--<a data-toggle="popover" title="" id="btnCreativeServices" class="btn btn-primary button" href="http://www.kohd.co/art/index.php">Creative<br />Services</a>-->
+                            <a data-toggle="popover" title="" id="btnCreativeServices" class="btn btn-primary button" href="http://www.vgfoto.com/index.php">Creative<br />Services</a>
                         </div>
                     </div>
                 </div>
@@ -202,7 +203,7 @@
 
             $(document).ready(function () {
 
-                // Are we reseting the preferred url cookie?
+                // Are we resetting the preferred url cookie?
                 if (getUrlParameter('reset')) {
                     $.removeCookie(COOKIENAME);
                 } else {

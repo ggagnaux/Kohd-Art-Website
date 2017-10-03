@@ -53,9 +53,12 @@
                             In addition to his technical training, he has completed Langara's photography
                             diploma program which has helped provide the necessary technical skills in photography and post-production.
                         </p>
-                        <p>
+                        <!-- <p>
                             He can be found at his website <a href="http://www.gvg.io" target="_new">www.gvg.io</a>&nbsp;<i class="fa fa-external-link" aria-hidden="true" data-toggle="tooltip" title="External link..."></i>
                             and on the following social media sites:
+                        </p> -->
+                        <p>
+                            He can be found on the following social media sites:
                         </p>
                         <br>
                         <p>
